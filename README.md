@@ -1,2 +1,2 @@
 # py36_number_guess
-Python 3.6 number guessing game
+Python number guessing game for Python 3.6
