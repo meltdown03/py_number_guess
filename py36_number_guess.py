@@ -6,7 +6,7 @@ import os
 
 count = 0
 os.system('clear')
-while True:    
+while True:
     try:
         print('Select the low number:')
         lowest = int(input())
