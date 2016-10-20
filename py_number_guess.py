@@ -41,12 +41,12 @@ else:
             if guess < highest:
                 highest = guess
             os.system('clear')
-            print("Lower, between {} and {}.\nThat's {} guess(es) so far".format(lowest, highest, count))
+            print("Lower, guess from {} to {}.\nThat's {} guess(es) so far".format(lowest, highest, count))
         if answer > guess:
             if guess > lowest:
                 lowest = guess
             os.system('clear')
-            print("Higher, between {} and {}.\nThat's {} guess(es) so far.".format(lowest, highest, count))
+            print("Higher, guess from {} to {}.\nThat's {} guess(es) so far.".format(lowest, highest, count))
         if answer == guess:
             os.system('clear')
             print("Correct! It took you {} guesses.".format(count))
