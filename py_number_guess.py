@@ -1,4 +1,4 @@
-# number_guess.py
+# py_number_guess.py
 # created by Neal Miller
 
 import random
