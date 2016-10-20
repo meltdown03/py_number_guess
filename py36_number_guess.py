@@ -4,12 +4,26 @@
 import random
 import os
 
-answer = random.randint(1, 100)
 count = 0
-lowest = 0
-highest = 101
 os.system('clear')
-print(f'Guess a number between {lowest} and {highest}.')
+while True:    
+    try:
+        print('Select the low number:')
+        lowest = int(input())
+        print('Select the high number:')
+        highest = int(input())
+        if highest <= lowest:
+            os.system('clear')
+            print('High number must be greater than the low number.')
+            continue
+        break
+    except ValueError:
+        os.system('clear')
+        print('Numbers only, try again.')
+        continue
+os.system('clear')
+answer = random.randint(lowest, highest)
+print(f'Guess a number from {lowest} to {highest}.')
 while True:
     try:
         guess = int(input())
