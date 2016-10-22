@@ -5,6 +5,7 @@ import random
 import os
 
 os.system('clear')
+#  User selects starting range
 while True:
     try:
         print('Select the low number:')
@@ -21,7 +22,7 @@ while True:
         print('Numbers only, try again.')
         continue
 os.system('clear')
-answer = random.randint(lowest, highest)
+answer = random.randint(lowest, highest)     # random int is set
 count = 0
 os.system('clear')
 print('Guess a number from {} to {}.'.format(lowest, highest))
