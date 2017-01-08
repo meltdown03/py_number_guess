@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # py_number_guess.py
 # created by Neal Miller
 
@@ -60,4 +63,3 @@ else:
             except NameError:
                 print('Numbers only. Try again.')
                 continue
-
