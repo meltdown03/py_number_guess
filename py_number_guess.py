@@ -22,7 +22,11 @@ while True:
         break
     except NameError:
         os.system('clear')
-        print('Numbers only, try again.')
+        print('Whole numbers only, try again.')
+        continue
+    except SyntaxError:
+        os.system('clear)
+        print('Whole numbers only, try again.')
         continue
 os.system('clear')
 answer = random.randint(lowest, highest)     # random int is set
@@ -34,7 +38,10 @@ while True:
         guess = int(input())
         break
     except NameError:
-        print('Numbers only. Try again.')
+        print('Whole numbers only. Try again.')
+        continue
+    except SyntaxError:
+        print('Whole numbers only. Try again.')
         continue
 if answer == guess:
     print('Wow! You got it on the first try!')
@@ -61,5 +68,9 @@ else:
                 guess = int(input())
                 break
             except NameError:
-                print('Numbers only. Try again.')
+                print('Whole numbers only. Try again.')
                 continue
+            except SyntaxError:
+                print('Whole numbers only. Try again.')
+                continue
+
