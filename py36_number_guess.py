@@ -41,13 +41,13 @@ else:
     while count >= 0:
         count += 1
         if answer < guess:
-            if guess < highest:
-                highest = guess
+            if guess <= highest:
+                highest = (guess - 1)
             os.system('clear')
             print(f"Lower, guess from {lowest} to {highest}.\nThat's {count} guess(es) so far")
         if answer > guess:
-            if guess > lowest:
-                lowest = guess
+            if guess >= lowest:
+                lowest = (guess + 1)
             os.system('clear')
             print(f"Higher, guess from {lowest} to {highest}.\nThat's {count} guess(es) so far.")
         if answer == guess:
