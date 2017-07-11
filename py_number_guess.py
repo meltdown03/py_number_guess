@@ -25,7 +25,7 @@ while True:
         print('Whole numbers only, try again.')
         continue
     except SyntaxError:
-        os.system('clear)
+        os.system('clear')
         print('Whole numbers only, try again.')
         continue
 os.system('clear')
