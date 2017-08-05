@@ -28,6 +28,10 @@ while True:
         os.system('clear')
         print('Whole numbers only, try again.')
         continue
+    except TypeError:
+        os.system('clear')
+        print('Whole numbers only, try again.')
+        continue
 os.system('clear')
 answer = random.randint(lowest, highest)     # random int is set
 count = 0
@@ -41,6 +45,9 @@ while True:
         print('Whole numbers only. Try again.')
         continue
     except SyntaxError:
+        print('Whole numbers only. Try again.')
+        continue
+    except TypeError:
         print('Whole numbers only. Try again.')
         continue
 if answer == guess:
@@ -73,4 +80,6 @@ else:
             except SyntaxError:
                 print('Whole numbers only. Try again.')
                 continue
-
+            except TypeError:
+                print('Whole numbers only. Try again.')
+                continue
