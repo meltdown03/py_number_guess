@@ -20,15 +20,7 @@ while True:
             print('High number must be greater than the low number.')
             continue
         break
-    except NameError:
-        os.system('clear')
-        print('Whole numbers only, try again.')
-        continue
-    except SyntaxError:
-        os.system('clear')
-        print('Whole numbers only, try again.')
-        continue
-    except TypeError:
+    except:
         os.system('clear')
         print('Whole numbers only, try again.')
         continue
@@ -41,13 +33,7 @@ while True:
     try:
         guess = int(input())
         break
-    except NameError:
-        print('Whole numbers only. Try again.')
-        continue
-    except SyntaxError:
-        print('Whole numbers only. Try again.')
-        continue
-    except TypeError:
+    except:
         print('Whole numbers only. Try again.')
         continue
 if answer == guess:
@@ -74,12 +60,6 @@ else:
             try:
                 guess = int(input())
                 break
-            except NameError:
-                print('Whole numbers only. Try again.')
-                continue
-            except SyntaxError:
-                print('Whole numbers only. Try again.')
-                continue
-            except TypeError:
+            except:
                 print('Whole numbers only. Try again.')
                 continue

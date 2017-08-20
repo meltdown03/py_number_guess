@@ -21,9 +21,9 @@ while True:
             print('High number must be greater than the low number.')
             continue
         break
-    except ValueError:
+    except:
         os.system('clear')
-        print('Numbers only, try again.')
+        print('Whole Numbers only, try again.')
         continue
 os.system('clear')
 answer = random.randint(lowest, highest)    # random int is set
