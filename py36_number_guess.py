@@ -32,7 +32,7 @@ while True:
     try:
         guess = int(input())
         break
-    except ValueError:
+    except:
         print('Numbers only. Try again.')
         continue
 if answer == guess:
@@ -59,6 +59,6 @@ else:
             try:
                 guess = int(input())
                 break
-            except ValueError:
+            except:
                 print('Numbers only. Try again.')
                 continue
