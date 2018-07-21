@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# py36_number_guess.py
+# py_number_guess.py
 # created by Neal Miller
 
 import random
 import os
 
-count = 0
 os.system('clear')
-# User selects starting range
+#  User selects starting range
 while True:
     try:
         print('Select the low number:')
@@ -23,17 +22,19 @@ while True:
         break
     except:
         os.system('clear')
-        print('Whole Numbers only, try again.')
+        print('Whole numbers only, try again.')
         continue
 os.system('clear')
-answer = random.randint(lowest, highest)    # random int is set
-print(f'Guess a number from {lowest} to {highest}.')
+answer = random.randint(lowest, highest)     # random int is set
+count = 0
+os.system('clear')
+print('Guess a number from {} to {}.'.format(lowest, highest))
 while True:
     try:
         guess = int(input())
         break
-    except ValueError:
-        print('Numbers only. Try again.')
+    except:
+        print('Whole numbers only. Try again.')
         continue
 if answer == guess:
     print('Wow! You got it on the first try!')
@@ -44,21 +45,21 @@ else:
             if guess <= highest:
                 highest = (guess - 1)
             os.system('clear')
-            print(f"Lower, guess from {lowest} to {highest}.\nThat's {count} guess(es) so far")
+            print("Lower, guess from {} to {}.\nThat's {} guess(es) so far".format(lowest, highest, count))
         if answer > guess:
             if guess >= lowest:
                 lowest = (guess + 1)
             os.system('clear')
-            print(f"Higher, guess from {lowest} to {highest}.\nThat's {count} guess(es) so far.")
+            print("Higher, guess from {} to {}.\nThat's {} guess(es) so far.".format(lowest, highest, count))
         if answer == guess:
             os.system('clear')
-            print(f"Correct! It took you {count} guesses.")
+            print("Correct! It took you {} guesses.".format(count))
             break
         print('Guess again.')
         while True:
             try:
                 guess = int(input())
                 break
-            except ValueError:
-                print('Numbers only. Try again.')
+            except:
+                print('Whole numbers only. Try again.')
                 continue
