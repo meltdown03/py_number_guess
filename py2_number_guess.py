@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
-# py_number_guess.py
+# py2_number_guess.py
 # created by Neal Miller
 
 import random
